@@ -1,4 +1,5 @@
 <?php
+    session_start();
     $folder = "private";
     $file = "private/categories";
     $cats = [];

@@ -1,4 +1,5 @@
 <?php
+session_start();
 require("header.php");
 ?>
 
@@ -58,6 +59,9 @@ require("header.php");
     <input class="form_button" type="submit" name="submit" value="MODIFY" />
     <input class="form_button" type="submit" name="submit" value="DELETE" />
     </form>
+    <?php 
+    include("orders.php")
+    ?>
 </div>
 </main>
 <?php require("footer.php"); ?>

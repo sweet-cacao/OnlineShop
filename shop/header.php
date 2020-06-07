@@ -1,4 +1,5 @@
 <?php
+session_start();
 require("head.php");
 ?>
 
@@ -19,7 +20,7 @@ require("head.php");
 				<ul>
 					<li><a href="#">Login</a></li>
 					<li><a href="#">Register</a></li>
-					<li><a href="#">Busket</a></li>
+					<li><a href="basket.php">Busket</a></li>
 				</ul>
 			</div>
 		</div>

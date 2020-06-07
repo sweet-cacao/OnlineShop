@@ -1,4 +1,5 @@
 <?php
+    session_start();
     $folder = "private";
     $file = "private/items";
     // $arr = [];
@@ -30,7 +31,7 @@
                 "$</span>".
                 "<br /><br />".
                 "<span>".
-                "<a href='#'>Add to cart</a>".
+                "<a href='addtobusket.php?name=".$elem['name']."&price=".$elem['price']."'>Add to cart</a>".
                 "</span>".
                 "</div><br />";
             }

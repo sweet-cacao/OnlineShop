@@ -326,6 +326,24 @@ form {
 	font-weight: 1000;
 }
 
+/*CART*/
+
+/*КНОПКА ИЗ ФОРМ, СТИЛИ ДЛЯ ITEMBLOCK*/
+
+.itemblock_name
+{
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	color: white;
+	height:2em;
+	width: 100%;
+	font-size: 300%;
+	font-weight: 900;
+	text-align: center;
+}
+
+
 /* FOOTER  */
 
 footer {
