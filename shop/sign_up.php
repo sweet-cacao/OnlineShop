@@ -2,7 +2,7 @@
 session_start();
 ?>
 
-<?php require("header.php"); ?>
+<?php require("./header.php"); ?>
 
 <main>
 	<div class="content-register">
