@@ -13,6 +13,14 @@ ul {
 	padding: 0;
 }
 
+a {
+	text-decoration: none;
+}
+
+a:visited {
+	color: #fff;
+}
+
 .wrapper {
 	display: flex;
 	flex-direction: column;
@@ -40,7 +48,6 @@ header {
 
 .navigation ul li a, .auth ul li a {
 	color: #fff;
-	text-decoration: none;
 	padding: 0 20px 0 20px;
 }
 
@@ -195,6 +202,7 @@ main
 {
 	flex: 1 1 auto;
 	width: 100%;
+	height: 87%;
 }
 
 .itemblock
@@ -273,57 +281,23 @@ main
 	opacity: 50%;
 }
 
-/* FORMS */
+/* LOGIN, REGSTER PAGES */
 
-.form_label
-{
-	font-weight: bold;
-	color: violet;
-	transition: 0.3s;
+.content-register form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	/* margin: 0 50px; */
 }
 
-form {
-	width: 400px;
-	padding: 32px;   
-	border-radius: 10px;   
-	box-shadow: 0 4px 16px #ccc; 
-	font-family: sans-serif; 
-	letter-spacing: 1px;
-	margin-left: 10em;
-	margin-top: 2em;
-	color: rgb(231, 206, 206);
-	margin-bottom: 2em;;
-}
-
-.form_input {
-	width: 100%;
-	padding: 0 0 10px 0;
-	border: none;
-	border-bottom: 1px solid #e0e0e0;
-	background-color: transparent; 
-	outline: none;
-	transition: 0.3s;
-	color: whitesmoke;
-	font-size: 100%;
-}
-
-.form_button {
-	padding: 10px 20px;
-	border: none;
-	border-radius: 5px; 
-	font-family: sans-serif;
-	letter-spacing: 1px;
-	font-size: 16xp;
-	color :#fff ; 
-	background-color: rgb(41, 7, 80);
-	outline: none; 
-	cursor: pointer;
-	transition: 0.3s;
-}
-
-.form_title { 
-	padding-left: 35%;
-	font-weight: 1000;
+.content-register {
+	color: #fff;
+	border: #980084 solid 1px;
+	height: 200px;
+	width: 300px;
+	margin: 30px auto;
+	padding: 50px;
+	border-radius: 20px;
 }
 
 /* FOOTER  */

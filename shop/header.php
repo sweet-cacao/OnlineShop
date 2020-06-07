@@ -1,4 +1,5 @@
 <?php
+session_start();
 require("head.php");
 ?>
 
@@ -17,8 +18,15 @@ require("head.php");
 			</div>
 			<div class="auth">
 				<ul>
-					<li><a href="#">Login</a></li>
-					<li><a href="#">Register</a></li>
+				<?php 
+				if ($_SESSION['user-logged']) {
+					echo ('<li><a href="#">'. $_SESSION["user-logged"] . '</a></li>
+					<li><a href="logout.php">Logout</a></li>');
+				}
+				else {
+					echo ('<li><a href="login.php">Login</a></li>
+					<li><a href="sign_up.php">Register</a></li>');
+				} ?>
 					<li><a href="#">Busket</a></li>
 				</ul>
 			</div>
