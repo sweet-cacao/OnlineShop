@@ -1,4 +1,11 @@
 <?php
+session_start();
+if ($_SESSION['user-logged'] != 'admin' && !$_SESSION['is-admin']) {
+    exit(header('Location: index.php'));
+}
+?>
+
+<?php
 require("header.php");
 ?>
 
@@ -54,9 +61,9 @@ require("header.php");
         <label class="form_label">Password</label> <input class = "form_input" type="text" name="passwd" value="" />
 		<br />
         <br />
-    <input class="form_button" type="submit" name="submit" value="CREATE" />
-    <input class="form_button" type="submit" name="submit" value="MODIFY" />
-    <input class="form_button" type="submit" name="submit" value="DELETE" />
+    <input class="form_button" type="submit" name="create_user" value="CREATE" />
+    <input class="form_button" type="submit" name="modify_user" value="MODIFY" />
+    <input class="form_button" type="submit" name="delete_user" value="DELETE" />
     </form>
 </div>
 </main>

@@ -6,7 +6,7 @@ session_start();
 
 <main>
 	<div class="content-register">
-	<form action="check_user.php" method="POST">
+	<form action="./user/check_user.php" method="POST">
 			<p>Enter username:</p>
 			<input type="text" name="login" value="" placeholder="Username">
 			<p>Enter password:</p>

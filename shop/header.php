@@ -19,7 +19,11 @@ require("head.php");
 			<div class="auth">
 				<ul>
 				<?php 
-				if ($_SESSION['user-logged']) {
+				if ($_SESSION['is-admin'] || $_SESSION['user-logged'] == 'admin') {
+					echo ('<li><a href="admin.php">'. $_SESSION["user-logged"] . '</a></li>
+					<li><a href="logout.php">Logout</a></li>');
+				}
+				else if ($_SESSION['user-logged']) {
 					echo ('<li><a href="#">'. $_SESSION["user-logged"] . '</a></li>
 					<li><a href="logout.php">Logout</a></li>');
 				}
